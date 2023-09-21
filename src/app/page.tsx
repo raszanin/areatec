@@ -20,11 +20,11 @@ export default function Home() {
         </div>
       </header>
       <main className="flex flex-1 justify-center items-center p-6">
-        <h1>Mapeamento, Planejamento e Execução de Projetos</h1>
+        <h1 className='text-lg'>Mapeamento, Planejamento e Execução de Projetos</h1>
       </main>
-      <footer className="flex flex-col justify-center items-center p-6">
-        <h1>Tarumã - SP</h1>
-        <h2>2023</h2>
+      <footer className="flex flex-col bg-black/50 justify-center items-center p-3">
+        <h1 className='text-sm'>Tarumã - SP</h1>
+        <h2 className='text-xs'>@ 2023 AreaTec. All Rights Reserved</h2>
       </footer>
     </div>
   )
