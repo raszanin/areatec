@@ -6,11 +6,20 @@ import { Input } from "@/components/ui/input"
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 
+import { Toaster } from "@/components/ui/toaster"
+import { useToast } from "@/components/ui/use-toast";
+
 export default function Forgot() {
+  const { toast } = useToast();
+
   function login(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    alert('Em breve, sua senha será enviada para seu e-mail. Obrigado por nos visitar 😊')
-    console.log('forgot')
+
+    toast({
+      title: "Obrigado por nos visitar!",
+      description: "Em breve, sua senha será enviada para seu e-mail.",
+      style: { background: '#444', color: '#fff' },
+    })
   }
 
 
@@ -38,19 +47,15 @@ export default function Forgot() {
             Enviar
             <Key size={24} />
           </Button>
-
-
-
-
         </form>
-
-
-
       </main>
+
       <footer className="flex flex-col bg-black/50 justify-center items-center p-3">
         <h1 className='text-sm'>Tarumã - SP</h1>
         <h2 className='text-xs'>@ 2023 AreaTec. All Rights Reserved</h2>
       </footer>
+
+      <Toaster />
     </div>
   )
 }
