@@ -8,6 +8,8 @@ import { Button } from '@/components/ui/button';
 
 import { Toaster } from "@/components/ui/toaster"
 import { useToast } from "@/components/ui/use-toast";
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 
 export default function Login() {
@@ -25,12 +27,8 @@ export default function Login() {
 
   return (
     <div className="flex flex-col h-full bg-camera bg-cover">
-      <div className='flex justify-start gap-2 p-2 bg-black/50'>
-        <Link href='/' className='flex gap-2'>
-          <ArrowCircleLeft size={24} />
-          <span>Home</span>
-        </Link>
-      </div>
+      <Header />
+
       <main className="flex flex-1 justify-center items-center p-6">
         <form onSubmit={login} className="flex flex-col w-full md:w-96 gap-4 bg-black/50 p-6 rounded-lg">
           <div className='flex justify-center'><h1>Área do Cliente</h1></div>
@@ -55,10 +53,8 @@ export default function Login() {
         </form>
 
       </main>
-      <footer className="flex flex-col bg-black/50 justify-center items-center p-3">
-        <h1 className='text-sm'>Tarumã - SP</h1>
-        <h2 className='text-xs'>@ 2023 AreaTec. All Rights Reserved</h2>
-      </footer>
+
+      <Footer />
 
       <Toaster />
     </div >

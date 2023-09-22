@@ -1,17 +1,17 @@
 'use client'
 
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+
 import { WhatsappLogo, EnvelopeSimple, User } from '@phosphor-icons/react';
 import Link from 'next/link';
+
 
 export default function Home() {
   return (
     <div className="flex flex-col h-full bg-camera bg-cover">
-      <div className='flex justify-end gap-2 p-2 bg-black/50'>
-        <Link href='/login' className='flex gap-2'>
-          <User size={24} />
-          <span>Entre</span>
-        </Link>
-      </div>
+      <Header />
+
       <header className="flex justify-between p-6">
         <div className="flex flex-col"><span className="font-bold text-5xl">AreaTec </span>Consultoria em Tecnologia e Cidades Inteligentes</div>
         <div className='flex gap-4'>
@@ -22,10 +22,9 @@ export default function Home() {
       <main className="flex flex-1 justify-center items-center p-6">
         <h1 className='text-lg'>Mapeamento, Planejamento e Execução de Projetos</h1>
       </main>
-      <footer className="flex flex-col bg-black/50 justify-center items-center p-3">
-        <h1 className='text-sm'>Tarumã - SP</h1>
-        <h2 className='text-xs'>@ 2023 AreaTec. All Rights Reserved</h2>
-      </footer>
+
+      <Footer />
+
     </div>
   )
 }
