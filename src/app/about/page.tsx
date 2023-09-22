@@ -1,13 +1,11 @@
 'use client'
 
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
+import Footer from "@/components/Footer"
+import Header from "@/components/Header"
+import { EnvelopeSimple, WhatsappLogo } from "@phosphor-icons/react"
+import Link from "next/link"
 
-import { WhatsappLogo, EnvelopeSimple, User } from '@phosphor-icons/react';
-import Link from 'next/link';
-
-
-export default function Home() {
+export default function About() {
   return (
     <div className="flex flex-col h-full bg-camera bg-cover">
       <Header />
@@ -20,7 +18,7 @@ export default function Home() {
         </div>
       </header>
       <main className="flex flex-1 justify-center items-center p-6">
-        <h1 className='text-lg'>Mapeamento, Planejamento e Execução de Projetos</h1>
+        <h1 className='text-lg'>Sobre</h1>
       </main>
 
       <Footer />
