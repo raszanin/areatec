@@ -20,7 +20,7 @@ export default function Home() {
         </div>
       </header>
       <main className="flex flex-1 justify-center items-center p-6">
-        <h1 className='text-lg'>Mapeamento, Planejamento e Execução de Projetos</h1>
+        <h1 className='text-lg'>Planejamento, Desenvolvimento e Execução de Projetos</h1>
       </main>
 
       <Footer />
